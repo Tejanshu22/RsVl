@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Rose Day 🌹</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="rose">
+
+  <h1>🌹 Happy Rose Day 🌹</h1>
+
+  <h2 id="nameText"></h2>
+
+  <div class="images">
+    <img src="https://floralife.com/wp-content/uploads/2021/12/Roses-DT_2560X1790.png">
+    <img src="https://media.istockphoto.com/id/485179146/photo/background-blue-floral-variety.jpg?s=612x612&w=0&k=20&c=r2Pmm6oslhvjVuFMbHOoxXZQP192bC6tXbVbM6mc7v4=">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv9wHXOO_uDYdff64KbY3o9Vb6yd8Kxgj2sA&s">
+    <img src="https://media.istockphoto.com/id/485179146/photo/background-blue-floral-variety.jpg?s=612x612&w=0&k=20&c=r2Pmm6oslhvjVuFMbHOoxXZQP192bC6tXbVbM6mc7v4=">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv9wHXOO_uDYdff64KbY3o9Vb6yd8Kxgj2sA&s">
+    <img src="https://media.istockphoto.com/id/485179146/photo/background-blue-floral-variety.jpg?s=612x612&w=0&k=20&c=r2Pmm6oslhvjVuFMbHOoxXZQP192bC6tXbVbM6mc7v4=">
+  </div>
+
+  <script>
+    // Get name from URL
+    const params = new URLSearchParams(window.location.search);
+    const name = params.get("name");
+
+    document.getElementById("nameText").innerText =
+      "Dear " + name + " 💖";
+  </script>
+
+</body>
+</html>
